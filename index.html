@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Responsive Portfolio | D. Shanmugapriya</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#myskills">My Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Home Section -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, It's Me</h3>
+                <h1>D.Shanmugapriya</h1>
+                <h3>And I'm a <span class="multiple-text">CSE Student at NPSBCET</span></h3>
+                <div class="social-media">
+                    <a href="https://github.com/shanmumoorthy"><i class='bx bxl-github'></i></a>
+                    <a href="mailto:shanmumoorthy24@gmail.com"><i class='bx bxs-envelope'></i></a>
+                    <a href="https://www.instagram.com/shanmugapriya"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/shanmugapriya22"><i class='bx bxl-linkedin-square'></i></a>
+                </div>
+                <a href="assets\Shanmugapriya-Resume.pdf" class="btn">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="assets\computer_engineer-compare-page.png" alt="Profile Image">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="assets\1385382.jpg" alt="About Me">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3> FullStack Developer</h3>
+                <p>I am a passionate software developer with a strong foundation in web development, specializing in the MERN stack . I enjoy transforming ideas into user-friendly digital solutions by combining creativity with technical expertise. With hands-on experience in developing responsive websites, mobile apps, and interactive interfaces, I am committed to continuously learning and exploring innovative technologies to enhance user experiences and deliver impactful projects.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+         <!-- Skills Section -->
+    <!-- Skills Section -->
+<section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+    <div class="skills-container">
+        <div class="skill-box" data-title="Frontend Development">
+            <i class="bx bx-code-alt"></i>
+            <h3>Frontend Development</h3>
+            <p>Proficient in building responsive and dynamic user interfaces using <strong>HTML5, CSS3, JavaScript</strong> and modern frameworks like <strong>React.</strong></p>
+        </div>
+        <div class="skill-box" data-title="Backend Development">
+            <i class="bx bx-server"></i>
+            <h3>Backend Development</h3>
+            <p>Experienced in building RESTful APIs using <strong>Node.js, Express.js,</strong> and managing databases with <strong>MongoDB.</strong></p>
+        </div>
+        <div class="skill-box" data-title="Other Tools">
+            <i class="bx bx-wrench"></i>
+            <h3>Other Tools</h3>
+            <p>Familiar with version control using <strong>Git,</strong> designing UI/UX in <strong>Figma,</strong> implementing backend services using <strong>Firebase,</strong> and integrating <strong>Google Sheets.</strong></p>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Portfolio Section -->
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="assets\Screenshot 2024-03-16 215444.png" alt="QR Code Generator">
+                    <div class="portfolio-layer">
+                        <h4>QR Code Generator</h4>
+                        <p>Web application that allows users to generate and download QR codes instantly.</p>
+                        <a href="https://github.com/shanmumoorthy/QR-code.git"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="assets\food store.png" alt="Online Food Order">
+                    <div class="portfolio-layer">
+                        <h4>Online Food Order </h4>
+                        <p>Designed and developed a responsive online food ordering site using HTML,CSS, and Tailwindcss.</p>
+                        <a href="https://github.com/shanmumoorthy/food-store-b6.git"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="assets\My Portfolio.png" alt="My Portfolio">
+                    <div class="portfolio-layer">
+                        <h4>My Portfolio</h4>
+                        <p>My portfolio highlights my expertise, projects, resume, and an interactive AMA section—explore and connect!</p>
+                        <a href="https://github.com/shanmumoorthy/Wikipedia-/tree/master/portfolio"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+            <form action="#" name="submit-to-google-sheet">
+                <div class="input-box">
+                    <input type="text" name="Name" placeholder="Full Name" required>
+                    <input type="email" name="Email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" name="Mobile" placeholder="Mobile Number">
+                    <input type="text" name="Subject" placeholder="Email Subject">
+                </div>
+                <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+            <span id="msg"></span>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2025 by D. Shanmugapriya | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="script.js"></script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/shanmu_url/exec';
+            const form = document.forms['submit-to-google-sheet'];
+            const msg = document.getElementById("msg");
+            
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully!";
+                        setTimeout(() => { msg.innerHTML = ""; }, 5000);
+                        form.reset();
+                    })
+                    .catch(error => console.error('Error!', error.message));
+            });
+        </script>
+    </body>
+</html>
